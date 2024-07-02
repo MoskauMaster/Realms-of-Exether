@@ -1,4 +1,4 @@
-﻿BUILDINGS = {
+BUILDINGS = {
 
   s:STATE_CROWNPEAK = {
 		region_state:DUM={
@@ -114,7 +114,7 @@
                    }
                 }
           reserves=1
-          activate_production_methods={ "pm_dye_workshops" "pm_traditional_looms" "pm_craftsman_sewing" }
+          activate_production_methods={ "pm_dye_workshops" "pm_traditional_looms" "pm_no_luxury_clothes" }
         }
             create_building={
           building="building_fishing_wharf"
@@ -271,7 +271,7 @@
       region_state:DUM={
         create_building={
           building="building_government_administration"
-          level=2
+          level=3
           reserves=1
           activate_production_methods={ "pm_horizontal_drawer_cabinets" }
         }
@@ -375,7 +375,7 @@
                    }
                 }
           reserves=1
-          activate_production_methods={ "pm_leaded_glass" "pm_disabled_ceramics" "pm_manual_glassblowing" }
+          activate_production_methods={ "pm_forest_glass" "pm_disabled_ceramics" "pm_manual_glassblowing" }
         }
         create_building={
           building="building_logging_camp"
@@ -704,7 +704,7 @@
       region_state:DUM={
         create_building={
           building="building_government_administration"
-          level=3
+          level=7
           reserves=1
           activate_production_methods={ "pm_horizontal_drawer_cabinets" }
         }
@@ -745,7 +745,7 @@
                    }
                 }
           reserves=1
-          activate_production_methods={ "pm_handsewn_clothes" "pm_traditional_looms" "pm_craftsman_sewing" }
+          activate_production_methods={ "pm_handsewn_clothes" "pm_traditional_looms" "pm_no_luxury_clothes" }
         }
         create_building={
           building="building_barracks"
