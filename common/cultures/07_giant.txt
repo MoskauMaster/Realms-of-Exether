@@ -367,7 +367,7 @@ cloud_giant={
 		Sivtsev
 	}
 	ethnicities = {
-		1 = giant_cloud
+		1 = giant
 	}
 	graphics = european
 }
