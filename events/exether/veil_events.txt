@@ -13,6 +13,13 @@ veil_events.1 = {
 
 	trigger = {
 		veil_integrity_total < 75
+		NOT = {
+			has_variable = veil_1_fired
+		}
+	}
+
+	immediate = {
+		set_variable = veil_1_fired
 	}
 
 	duration = 1
@@ -43,6 +50,13 @@ veil_events.2 = {
 
 	trigger = {
 		veil_integrity_total < 50
+		NOT = {
+			has_variable = veil_2_fired
+		}
+	}
+
+	immediate = {
+		set_variable = veil_2_fired
 	}
 
 	duration = 1
@@ -73,6 +87,13 @@ veil_events.3 = {
 
 	trigger = {
 		veil_integrity_total < 25
+		NOT = {
+			has_variable = veil_3_fired
+		}
+	}
+
+	immediate = {
+		set_variable = veil_3_fired
 	}
 
 	duration = 1
