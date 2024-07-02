@@ -1,5 +1,5 @@
 const regex =
-  /(s:(([^\s]+).+?(?== \{))(= \{\n)(.+?(region_state:([A-Za-z][A-Za-z][A-Za-z])))(=\{[\s\S]*?)(\n.*?((create_building=\{\s*building="building_livestock_ranch"))\s*level=([0-9]+)))/;
+  /(s:(([^\s]+).+?(?== \{))(= \{\n)(.+?(region_state:([A-Za-z][A-Za-z][A-Za-z])))(=\{[\s\S]*?)(\n.*?((create_building=\{\s*building="building_coal_mine"))\s*level=([0-9]+)))/;
 
 const string = `  s:STATE_CROWNPEAK = {
 		region_state:DUM={
@@ -9,9 +9,16 @@ const string = `  s:STATE_CROWNPEAK = {
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
-      create_building={
+            create_building={
         building="building_artillery_foundries"
-        level=1
+                add_ownership={ 
+                    building={ 
+                        type="building_financial_district"
+                        country="c:DUM"
+                        levels=1
+                        region="STATE_CROWNPEAK"
+                   }
+                }
         reserves=1
         activate_production_methods={ "pm_cannons" "pm_automation_disabled" }
       }
@@ -33,15 +40,29 @@ const string = `  s:STATE_CROWNPEAK = {
 				reserves=1
 				activate_production_methods={ "pm_traditional_art" }
 			}
-			create_building={
+            create_building={
 				building="building_furniture_manufacturies"
-				level=5
+                add_ownership={ 
+                    building={ 
+                        type="building_financial_district"
+                        country="c:DUM"
+                        levels=5
+                        region="STATE_CROWNPEAK"
+                   }
+                }
 				reserves=1
 				activate_production_methods={ "pm_lathe" "pm_automation_disabled" "pm_luxury_furniture" }
 			}
-			create_building={
+            create_building={
 				building="building_paper_mills"
-				level=5
+                add_ownership={ 
+                    building={ 
+                        type="building_financial_district"
+                        country="c:DUM"
+                        levels=5
+                        region="STATE_CROWNPEAK"
+                   }
+                }
 				reserves=1
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" }
 			}
